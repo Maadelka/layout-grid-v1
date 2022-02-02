@@ -4,46 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>grid layout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>grid sass</title>
 </head>
 <body>
     
 
 
-<!-- -------------------------------------navbar and hero -->
-<grid-container class="c-n-v">
-    <grid_item class="a">navbar</grid_item>
-    <grid_item class="b">hero</grid_item>
-    <grid_item class="c">s-hero</grid_item>
-    <grid_item class="d">s-hero</grid_item>
-    <grid_item class="e">s-hero</grid_item>
-    <grid_item class="f">fitur</grid_item>
-    <grid_item class="g">fitur</grid_item>
-    <grid_item class="h">fitur</grid_item>
-    <grid_item class="i">fitur</grid_item>
-    <grid_item class="j">fitur</grid_item>
-</grid-container>
+<div class="container">
+<!-------------------------------------------header  -->
+    <header class="igrid">
+        <div class="hro hro1">hero</div>
+        <div class="hro hro2">s-hero</div>
+        <div class="hro hro3">s-hero</div>
+    </header>
 
 
 
-<!-- -------------------------------------content and aside -->
-<grid-container class="c-c-a">
-    <grid_item class="satu">content</grid_item>
-    <grid_item class="dua">aside</grid_item>
-    <grid_item class="tiga">fitur</grid_item>
-    <grid_item class="empat">fitur</grid_item>
-    <grid_item class="lima">fitur</grid_item>
-    <grid_item class="enam">fitur</grid_item>
-</grid-container>
+<!-- -------------------------------------- navbar -->
+    <nav class="igrid">
+            <!-- logo / name brand -->
+        <div class="logo">
+            <a href=""><h1>Wamors</h1></a> 
+        </div>
+
+        <div class="dropd" id="dropd">
+            <!-- menubar -->
+            <ul>
+                <a href="">
+                    <li>Example</li>
+                </a>
+                <a href="">
+                    <li>Example</li>
+                </a>
+                <a href="">
+                    <li>Example</li>
+                </a>
+
+            </ul>
+            <!-- search -->
+            <div class="search">
+                <label for="cari">Search</label>
+                <input type="text" class="cari" id="cari">
+            </div>
+
+            <!-- Sign in -->
+            <div class="login">
+                <a href=""><h3>Sign in</h3></a>
+            </div>
+        </div>
+
+        <!-- tombol hamburger -->
+        <div class="bks-tmb">
+            <img src="assets/icon/menu.png" alt="" id="burger">
+        </div>
+    </nav>
 
 
 
-<!-- -------------------------------------img slide and footer -->
-<grid-container class="c-s-f">
-    <grid_item class="img-slide">slide img</grid_item>
-    <grid_item class="footer">footer</grid_item>
-</grid-container>
+    <!-- ----------------------------------------- main -->
+    <main class="igrid">
+        <div class=" Cmain content">content</div>
+        <aside class="Cmain">aside</aside>
+    </main>
 
 
 
@@ -56,6 +79,23 @@
 
 
 
+    <div class="igrid rekomen">
+        <div class="rkm rkm1">ftr1</div>
+        <div class="rkm rkm2">ftr2</div>
+        <div class="rkm rkm3">ftr3</div>
+        <div class="rkm rkm4">ftr4</div>
+        <div class="rkm rkm5">ftr5</div>
+    </div>
+
+    <div class="coments igrid">
+        <div class="example">coment</div>
+    </div>
+
+    <footer class="igrid">
+        <div class="example">footer</div>
+    </footer>
+
+</div>
 
 
 <script src="js/script.js"></script>
